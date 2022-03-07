@@ -1,7 +1,7 @@
 loan={}
 loan.amount = 0
 loan.choise
-loan.month_reference= { call_month_of_Loan }
+loan.month_reference = { call_month_of_Loan }
 
 function loan_method (choose)
 	choose == 1 payment_method = "12 months"
