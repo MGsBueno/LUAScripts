@@ -1,4 +1,11 @@
-loan={}
+[[--
+LOAN MOD FOR FS22
+version 1.0.0
+Author: MGsBueno/RJMODS
+--]]
+
+-- Global Variables 
+loan = {}
 loan.amount = 0
 loan.choise
 loan.month_reference = { call_month_of_Loan }
@@ -10,7 +17,7 @@ function loan_method (choose)
 return payment_method	
 end
 
-function load_loan_default_stats()
+function load_loan_default_stats ()
 	--reference currency "Euro"
 	level = { call_level_method }
 	loan = {}
@@ -20,11 +27,11 @@ function load_loan_default_stats()
 		loan.max = 2000000
 
 	elseif level == normal 
-		loan.interest =0,13
+		loan.interest = 0,13
 		loan.limit = 1000000
 
 	else 
-		loan.interest =0,18
+		loan.interest = 0,18
 		loan.limit = 500000
 	end
 	return loan
