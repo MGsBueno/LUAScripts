@@ -1,7 +1,7 @@
 loan={}
 loan.amount = 0
 loan.choise
-loan.month_reference= {call_month_of Loan
+loan.month_reference= { call_month_of Loan }
 
 function loan_method (choose)
 	choose == 1 payment_method = "12 months"
@@ -16,7 +16,7 @@ function load_loan_default_stats()
 	loan = {}
 	if level == easy
 	then
-		loan.interest = "0.07"; 
+		loan.interest = "0.07" 
 		loan.max = 2000000
 
 	elseif level == normal 
@@ -31,4 +31,4 @@ function load_loan_default_stats()
 end
 
 function payday(loan)
-	when month
+	end
